@@ -17,13 +17,23 @@
     
     <!-- INTERACTIVE WIDGETS -->
     <div class="item horizontal-container">
-        <div class="item"><!-- Your widget 1 code goes here. -->
+        <div class="item">
+            <label for="citySelector"><strong>Select City</strong></label>
+            <select id="citySelector">
+                <option value="Chicago">Chicago</option>
+                <option value="Indianapolis">Indianapolis</option>
+                <option value="Philadelphia">Philadelphia</option>
+                <option value="Phoenix">Phoenix</option>
+                <option value="Charlotte">Charlotte</option>
+                <option value="Jacksonville">Jacksonville</option>
+            </select>
             <!-- Widget 1 title -->
             <!-- Widget 1 element -->
         </div>
 
-        <!-- DELETE THE FOLLOWING DIV IF YOU ONLY HAVE 1 WIDGET. -->
         <div class="item"><!-- Your widget 2 code goes here. -->
+            <label for="startDate"><strong>Select Date Range</strong></label><br>
+            <input type="date" id="startDate"> to <input type="date" id="endDate">
             <!-- Widget 2 title -->
             <!-- Widget 2 element -->
         </div>
@@ -33,11 +43,6 @@
     <div class="item chart-container">
         <h2>Actual Mean Temperatures Over Time</h2>
         <svg id="lineChart1" width="800" height="400"></svg> <!-- If you change this ID name, you must change it in main.js too -->
-    </div>
-    <!-- DELETE THE FOLLOWING DIV IF YOU ONLY HAVE 1 CHART. -->
-    <div class="item chart-container">
-        <h2>[Chart 2 Title]</h2>
-        <svg id="lineChart2" width="900" height="400"></svg>
     </div>
     <script src="main.js"></script>
 </body>
