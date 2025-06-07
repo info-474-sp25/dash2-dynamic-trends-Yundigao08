@@ -20,6 +20,7 @@
         <div class="item">
             <label for="citySelector"><strong>Select City</strong></label>
             <select id="citySelector">
+                <option value="">- Select City -</option>
                 <option value="Chicago">Chicago</option>
                 <option value="Indianapolis">Indianapolis</option>
                 <option value="Philadelphia">Philadelphia</option>
@@ -27,22 +28,19 @@
                 <option value="Charlotte">Charlotte</option>
                 <option value="Jacksonville">Jacksonville</option>
             </select>
-            <!-- Widget 1 title -->
-            <!-- Widget 1 element -->
         </div>
 
-        <div class="item"><!-- Your widget 2 code goes here. -->
-            <label for="startDate"><strong>Select Date Range</strong></label><br>
-            <input type="date" id="startDate"> to <input type="date" id="endDate">
-            <!-- Widget 2 title -->
-            <!-- Widget 2 element -->
+        <div class="item">
+            <label for="dateSlider"><strong>Select Start Date</strong></label><br>
+            <input type="range" id="dateSlider" min="0" max="364" value="0">
+            <span id="sliderValueLabel"></span>
         </div>
     </div>
 
     <!-- CHART(S) -->
     <div class="item chart-container">
         <h2>Actual Mean Temperatures Over Time</h2>
-        <svg id="lineChart1" width="800" height="400"></svg> <!-- If you change this ID name, you must change it in main.js too -->
+        <svg id="lineChart1" width="800" height="400"></svg>
     </div>
     <script src="main.js"></script>
 </body>
